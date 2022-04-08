@@ -1,28 +1,191 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Mon CV</title>
-    </head>
-    <body>
-        <h2>Pierre-Louis L'ALLORET</h2>
-        <p><a href="photo.jpg"><img src="photo_petite.jpg" alt="Pierre-Louis L'ALLORET" /></a></p>
+<html lang="fr">
 
-        <h2>Mon experience</h2>
-        <ul>
-            <li><strong>2016-2018: </strong>Epitech Paris</li>
-            <li><strong>2018-2021: </strong>Institut aéronautique Jean Mermoz</li>
-            <li><strong>2022-2022: </strong>OpenClassRooms</li>
-        </ul>
-        <h2>Mes compétences</h2>
-        <ul>
-            <li>C & Obj C</li>
-            <li>Swift & swiftUI</li>
-            <li>HTML5 & CSS3 & Javascript</li>
-        </ul>
-        <h2>Ma formation</h2>
-        <ul>
-            <li>OpenClassRooms</li>
-        </ul>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Pierre-Louis L'ALLORET</title>
+</head>
+
+<body>
+    <header class="profile container">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="assets/img/profile.png" alt="">
+                    </div>
+                </div>
+                <h2 class="profile__name">Pierre-Louis L'ALLORET</h2>
+                <h3 class="profile__profession">Développeur WEB | IOS</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.linkedin.com/in/pierre-louis-l-alloret-5a131b233/" target="_blank"
+                        class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/lalloretpilou" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1</h3>
+                    <p class="profile__info-description">
+                        Years of <br> work
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">2</h3>
+                    <p class="profile__info-description">
+                        Projets <br> en cours
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+300</h3>
+                    <p class="profile__info-description">
+                        Utilisateurs <br> IOS
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <a download="" href="assets/pdf/Gianell-Cv.pdf" class="button">
+                    Téléchargez mon CV <i class="ri-download-line"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="filters container">
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">
+                    Projets
+                </button>
+                <button class="filters__button" data-target="#skills">
+                    Compétences
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+                <div class="projects__content grid filters__active" data-content id="projects">
+
+                    <article class="projects__card">
+                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">IOS</span>
+                                <h3 class="projects__title">PlaneCalc</h3>
+                                <a href="https://apps.apple.com/fr/app/planecalc/id1545367511"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/project2.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Booki Project</h3>
+                                <a href="https://github.com/lalloretpilou/Booki_Project"
+                                    class="projects__button button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Frontend développeur</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">intermédiaire</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">intermédiaire</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Compétences Techniques</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Xcode</h3>
+                                        <span class="skills__level">intermédiaire</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Swift / swiftUI</h3>
+                                        <span class="skills__level">intermédiaire</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">C</h3>
+                                        <span class="skills__level">Avancé</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Obj C</h3>
+                                        <span class="skills__level">intermédiaire</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; Pierre-Louis L'ALLORET. Tous droits résérvé
+        </span>
+    </footer>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

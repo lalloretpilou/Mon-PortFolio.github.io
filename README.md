@@ -1,3 +1,9 @@
-# Mon CV
+# 💼 Découvrez mon portfolio !
 
-Mes premières ligne en HTML
+- Compétences techniques
+- Projets en cours & términés
+- Mes réseaux
+- Domaines d'activités
+
+![preview img](assets/img/preview.png)
+
